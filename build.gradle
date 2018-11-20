@@ -406,7 +406,7 @@ task createToolPaths {
     Symlinks.createSymbolicLink("$buildDir/toolpaths/protobufJavaDir", protobufJavaDir)
 
     def googleJavaFormatJar = resolver.locateArchive(
-            'com.google.googlejavaformat:google-java-format:1.1:all-deps')
+            'com.google.googlejavaformat:google-java-format:1.6:all-deps')
     Symlinks.createSymbolicLink("$buildDir/toolpaths/googleJavaFormatJar", googleJavaFormatJar)
   }
 }
